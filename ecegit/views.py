@@ -34,7 +34,7 @@ def setup(request):
 
 @login_required
 def commits_csv(request):
-    if not request.user.username in ['jeyolfso', 'drayside', 'a3zaman']:
+    if not request.user.username in ['jeyolfso', 'drayside', 'a3zaman', 'rbabaeec', 'j4bian', 'dhshin', 'talguind']:
         return HttpResponseForbidden()
 
     from .forms import CommitTimeForm
